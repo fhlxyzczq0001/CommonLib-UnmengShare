@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--最新公告-->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+
+    <com.app.common.CustomView.AnimatedExpandableListView
+        android:id="@+id/notice_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:layoutAnimation="@anim/layout_slide_right"
+        android:listSelector="#f4f4f4"
+        android:groupIndicator="@null"
+        android:scrollbars="none" />
+</LinearLayout>

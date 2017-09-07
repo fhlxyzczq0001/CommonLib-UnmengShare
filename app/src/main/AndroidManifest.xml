@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.app.lotteryticket"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <!-- 允许程序访问Wi-Fi网络状态信 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- 读写手机状态和身份 -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- 可以读写SDCARD,包括其他storage,比如内部flash,usb等等 -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW"/><!--允许一个程序打开窗口使用TYPE_SYSTEM_ALERT,显示在其他所有程序的顶层 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:name=".Base.My_Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:replace="icon,label,theme">
+        <!--启动页-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_WelcomePage"
+            android:background="@color/white"
+            android:theme="@style/defaultStyle"
+        >
+
+        </activity>
+        <!--引导页-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_Guide_View"
+            android:theme="@style/defaultStyle"
+        />
+        <!--主MainActivity-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_MainActivity_View"
+            android:theme="@style/defaultStyle"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--网址-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_UR_View"
+            android:theme="@style/defaultStyle"
+        />
+        <!--软件介绍-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_AboutUs_View"
+            android:theme="@style/defaultStyle"
+        />
+        <!--历史开奖-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_HistoryPrize_View"
+            android:theme="@style/defaultStyle"
+        />
+        <!--计划中心-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_PlanCenter_View"
+            android:theme="@style/defaultStyle"
+        />
+        <!--计划内容-->
+        <activity
+            android:name=".MVP.View.Implement.Activity.Main_PlanContent_View"
+            android:theme="@style/defaultStyle"
+        />
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent"/>
+        <!--*****************************service************************************-->
+        <!-- 启动页后台下载图片的Service -->
+        <service android:name="com.app.lotteryticket.Service.WelcomePageService"/>
+        <!-- 后台更新下载 -->
+        <service android:name="com.app.lotteryticket.Service.UploadService">
+            <intent-filter>
+                <action android:name="com.lottery.Service.UploadService"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

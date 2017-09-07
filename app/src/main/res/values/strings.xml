@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">善益博软</string>
+    <string name="main_title_home">菜单</string>
+    <string name="main_title_recommend">推荐</string>
+    <string name="main_title_plan">计划</string>
+    <string name="main_title_myinfo">个人</string>
+
+    <string name="software_describe">\t\t包含双色球图表软件、双色球选号软件、双色球过滤软件、双色球胆杀软件、双色球缩水软件、双色球睿智软件和双色球傻瓜软件等福彩乐透型彩票软件。</string>
+</resources>

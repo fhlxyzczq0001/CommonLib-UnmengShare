@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--计划中心列表item布局-->
+<LinearLayout android:id="@+id/parentLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:padding="10dip"
+              android:orientation="horizontal"
+>
+
+    <!--期数-->
+    <TextView
+        android:id="@+id/textPeriods"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="期号"
+        android:textColor="@color/account_text_gray"
+        android:textSize="@dimen/x15"
+    />
+
+    <!--计划1-->
+    <TextView
+        android:id="@+id/textPlan1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="计划一"
+        android:textColor="@color/account_text_gray"
+        android:textSize="@dimen/x15"
+    />
+
+    <!--计划2-->
+    <TextView
+        android:id="@+id/textPlan2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="计划二"
+        android:textColor="@color/account_text_gray"
+        android:textSize="@dimen/x15"
+    />
+    <!--计划3-->
+    <TextView
+        android:id="@+id/textPlan3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="计划三"
+        android:textColor="@color/account_text_gray"
+        android:textSize="@dimen/x15"
+    />
+    <!--计划4-->
+    <TextView
+        android:id="@+id/textPlan4"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="计划四"
+        android:textColor="@color/account_text_gray"
+        android:textSize="@dimen/x15"
+    />
+</LinearLayout>

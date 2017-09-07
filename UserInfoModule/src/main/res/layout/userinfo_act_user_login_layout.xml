@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用户登录界面-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+>
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+
+    <!--顶部头像和说明=======start-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="vertical">
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/icon_loging_yg_head"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:gravity="center"
+            android:text="请登录您的账户"
+            android:textColor="@color/account_text_gray"
+            android:textSize="@dimen/x16"/>
+
+    </LinearLayout>
+    <!--顶部头像和说明=======end-->
+
+    <!--用户登录密码登录界面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+    >
+        <!--用户名输入框=======start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/shape_ed_gray_line_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView style="@style/logingIconImgStyle"
+                       android:src="@mipmap/icon_user_login"/>
+
+            <View android:layout_width="0.5dip"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/line_gray2"/>
+
+            <com.app.common.CustomView.ClearEditText
+                android:id="@+id/login_et_usename"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:completionThreshold="1"
+                android:dropDownHorizontalOffset="0dp"
+                android:dropDownSelector="@color/app_color"
+                android:hint="请输入手机号/邮箱/用户名"
+                android:inputType="text"
+                android:maxLength="16"
+                android:popupBackground="@color/act_background"
+            />
+        </LinearLayout>
+        <!--用户名输入框=======end-->
+
+        <!--密码输入框=======start-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dip"
+                      android:background="@drawable/shape_ed_gray_line_bg"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+
+            <ImageView style="@style/logingIconImgStyle"
+                       android:src="@mipmap/icon_user_register_password"/>
+
+            <View android:layout_width="0.5dip"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="20dip"
+                  android:background="@color/line_gray2"/>
+
+            <com.app.common.CustomView.ClearEditText
+                android:id="@+id/login_et_pwd"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+            />
+            <ImageView
+                android:id="@+id/iconPasswordIsShowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:src="@mipmap/icon_eye_hint"/>
+
+        </LinearLayout>
+        <!--用户名输入框=======end-->
+        <!--登录-->
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            app:rv_type="rectangle"
+            app:rv_zoom="true">
+
+            <TextView
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_gray_circle_bg"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="登  录"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x16"/>
+        </com.andexert.library.RippleView>
+        <!--忘记密码和注册有礼======start-->
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+        >
+            <!--忘记密码-->
+            <TextView
+                android:id="@+id/common_login_forgetpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="忘记密码？"
+                android:textColor="@color/account_text_gray"
+                android:textSize="@dimen/x13"/>
+
+            <!--注册有礼-->
+            <TextView
+                android:id="@+id/common_login_toregiest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="注册有礼"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/x13"/>
+
+        </RelativeLayout>
+        <!--忘记密码和注册有礼======end-->
+    </LinearLayout>
+</LinearLayout>

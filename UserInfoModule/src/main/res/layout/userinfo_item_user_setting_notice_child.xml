@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--最新公告子布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="18dip">
+
+    <TextView
+        android:id="@+id/notice_tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_back"
+        android:gravity="left|center"
+        android:lineSpacingExtra="3dp"
+        android:minHeight="35dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dp"
+        android:text="Expand"
+        android:textColor="@color/app_text_gray"
+        android:textSize="@dimen/x15"
+        android:visibility="visible"/>
+</LinearLayout>

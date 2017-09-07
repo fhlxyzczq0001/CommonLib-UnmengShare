@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页菜单-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+>
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+    <!--下拉刷新-->
+    <com.handmark.pulltorefresh.library.PullToRefresh_ObservableScrollView
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="false"
+        app:ptrAnimationStyle="flip"
+        app:ptrMode="both">
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <!--开奖情况说明-->
+            <LinearLayout
+                android:id="@+id/layoutPrizeCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dip">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="第"
+                              android:textColor="@color/app_text_gray"
+                              android:textSize="@dimen/x17"/>
+                    <TextView
+                        android:id="@+id/textPeriodNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/x17"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="期最新开奖"
+                              android:textColor="@color/app_text_gray"
+                              android:textSize="@dimen/x17"/>
+                </LinearLayout>
+                <!--中奖号码-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerWinningNumbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="20dip"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@null"
+                    android:scrollbars="none"
+                />
+                <!--距离下次开奖时间-->
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="20dip"
+                              android:gravity="center"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="距离下次开奖时间"
+                              android:textColor="@color/app_text_gray"
+                              android:textSize="@dimen/x17"/>
+                    <com.ddt.countdownview.CountdownView
+                        android:id="@+id/countdownViewTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        app:isHideTimeBackground="true"
+                        app:isShowDay="false"
+                        app:isShowHour="false"
+                        app:isShowMillisecond="true"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:isShowTimeBgDivisionLine="false"
+                        app:suffixGravity="center"
+                        app:suffixTextColor="@color/app_color"
+                        app:suffixTextSize="@dimen/x12"
+                        app:timeBgColor="@color/white"
+                        app:timeTextColor="@color/app_color"
+                        app:timeTextSize="@dimen/x17"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_gray"/>
+            <!-- 公告 -->
+            <RelativeLayout
+                android:id="@+id/announcement_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="10dip"
+            >
+
+                <TextView
+                    android:id="@+id/announcement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="[公告]"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size10"
+                    android:textStyle="bold"/>
+
+                <com.app.common.CustomView.AutoScrollTextView
+                    android:id="@+id/autoScrollTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toRightOf="@id/announcement"
+                    android:singleLine="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_gray"/>
+
+            <!--其他功能-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerOtherFunction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@null"
+                android:scrollbars="none"
+            />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefresh_ObservableScrollView>
+</LinearLayout>

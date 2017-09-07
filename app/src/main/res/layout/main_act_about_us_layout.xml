@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--关于我们-->
+<LinearLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+>
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15dip"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+        <ImageView android:layout_width="100dip"
+                   android:layout_height="100dip"
+                   android:src="@mipmap/icon_launcher"
+        />
+        <TextView
+            android:id="@+id/textVersionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/app_text_gray"
+            android:textSize="@dimen/x15"/>
+
+        <TextView
+            android:id="@+id/textDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:textColor="@color/app_text_gray"
+            android:textSize="@dimen/x15"
+            android:lineSpacingExtra="8dip"
+            android:text="@string/software_describe"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页计划布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light"
+              android:orientation="vertical">
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/light"/>
+    <com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_type="rectangle"
+        app:rv_zoom="true">
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/itemPlan3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            app:isShowRightText="false"
+            app:isShowUnderLine="false"
+            app:leftIcon="@mipmap/icon_launcher"
+            app:leftIconSize="0dip"
+            app:leftText="三星计划 "
+            app:leftTextMarginLeft="0dip"
+            app:rightIcon="@mipmap/icon_set_arrow_right"
+            app:rightStyle="iconShow"
+            app:rightTextColor="@color/account_text_gray"
+            app:rightTextSize="@dimen/x16"
+            app:textColor="@color/account_text_gray"
+            app:textSize="@dimen/x16"/>
+    </com.andexert.library.RippleView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_gray"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/light"/>
+    <com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_type="rectangle"
+        app:rv_zoom="true">
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/itemPlan5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            app:isShowRightText="false"
+            app:isShowUnderLine="false"
+            app:leftIcon="@mipmap/icon_launcher"
+            app:leftIconSize="0dip"
+            app:leftText="五星计划"
+            app:leftTextMarginLeft="0dip"
+            app:rightIcon="@mipmap/icon_set_arrow_right"
+            app:rightStyle="iconShow"
+            app:rightTextColor="@color/account_text_gray"
+            app:rightTextSize="@dimen/x16"
+            app:textColor="@color/account_text_gray"
+            app:textSize="@dimen/x16"/>
+    </com.andexert.library.RippleView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_gray"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.app.userinfo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--登录界面-->
+        <activity
+            android:name=".MVP.View.Userinfo_LogingView"
+            android:theme="@style/defaultStyle"
+            />
+        <!--用户通知消息-->
+        <activity
+            android:name=".MVP.View.Userinfo_UserNotice_View"
+            android:theme="@style/defaultStyle"
+            />
+        <!--修改密码页面-->
+        <activity
+            android:name=".MVP.View.Userinfo_UserModifyPass_View"
+            android:theme="@style/defaultStyle"
+        />
+    </application>
+
+</manifest>

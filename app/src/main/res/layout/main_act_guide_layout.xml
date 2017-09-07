@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--引导页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/myParent_layout"
+>
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+    <com.jazzy.viewpager.GuideViewPagers
+        android:id="@+id/guideViewPagers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_guide1"
+    />
+</LinearLayout>

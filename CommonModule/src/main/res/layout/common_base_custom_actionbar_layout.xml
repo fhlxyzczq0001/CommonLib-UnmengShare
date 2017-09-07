@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/acbr_Parent_Layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:gravity="center_vertical"
+>
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:id="@+id/acbr_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dip"
+    >
+        <ImageView
+            android:id="@+id/acbr_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_ygapp_icon"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/acbr_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:textColor="@color/black_white"
+            android:textSize="@dimen/x18"
+        />
+        <com.andexert.library.RippleView
+            android:id="@+id/acbr_left1_icon_RippleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            app:rv_type="rectangle"
+            app:rv_zoom="false">
+
+            <ImageView
+                android:id="@+id/acbr_left1_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:background="@mipmap/icon_actionbar_btn_left"
+            />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/acbr_left1_text_RippleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/acbr_left1_icon_RippleView"
+            android:layout_centerVertical="true"
+            app:rv_type="rectangle"
+            app:rv_zoom="false">
+
+            <TextView
+                android:id="@+id/acbr_left1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_white"
+                android:textSize="@dimen/x14"
+                android:visibility="invisible"
+            />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/acbr_right1_icon_RippleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            app:rv_type="rectangle"
+            app:rv_zoom="false">
+
+            <ImageView
+                android:id="@+id/acbr_right1_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+            />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/acbr_right1_icon_RippleView"
+            app:rv_type="rectangle"
+            app:rv_zoom="false">
+
+            <ImageView
+                android:id="@+id/acbr_right2_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_share"
+                android:visibility="invisible"
+            />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/acbr_right_text_RippleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            app:rv_type="rectangle"
+            app:rv_zoom="false">
+            <TextView
+                android:id="@+id/acbr_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black_white"
+                android:visibility="gone"
+                android:textSize="@dimen/x15"
+                android:textStyle="normal"/>
+        </com.andexert.library.RippleView>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_gray"
+        android:visibility="gone"/>
+</LinearLayout>

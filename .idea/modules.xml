@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/APP_LotteryTicket.iml" filepath="$PROJECT_DIR$/APP_LotteryTicket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/AndroidStudio_CommonLibrary.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/AndroidStudio_CommonLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonModule/CommonModule.iml" filepath="$PROJECT_DIR$/CommonModule/CommonModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserInfoModule/UserInfoModule.iml" filepath="$PROJECT_DIR$/UserInfoModule/UserInfoModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/countdownview/countdownview.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/countdownview/countdownview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/customActivityOnCarsh/customActivityOnCarsh.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/customActivityOnCarsh/customActivityOnCarsh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/download_anim_library/download_anim_library.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/download_anim_library/download_anim_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/glide_library/glide_library.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/glide_library/glide_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/guide_lib/guide_lib.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/guide_lib/guide_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/lsettingviewlibrary/lsettingviewlibrary.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/lsettingviewlibrary/lsettingviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/materialdesign/materialdesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/myDialog/myDialog.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/myDialog/myDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/rxretrofitlibrary/rxretrofitlibrary.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/rxretrofitlibrary/rxretrofitlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/shapeloading/shapeloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudio_CommonLibrary/superadapter/superadapter.iml" filepath="$PROJECT_DIR$/../AndroidStudio_CommonLibrary/superadapter/superadapter.iml" />
+    </modules>
+  </component>
+</project>

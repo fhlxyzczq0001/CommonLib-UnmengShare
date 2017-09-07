@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--无网络-->
+<LinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_back"
+              android:orientation="vertical"
+>
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+<LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:gravity="center"
+              android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_nonetwork"
+        android:layout_centerInParent="true"/>
+    
+    <TextView
+              android:id="@+id/prompt_information"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="点击重试"
+              android:background="@drawable/shape_red_circular_bg"
+              android:textColor="@color/white"
+              android:paddingTop="5dip"
+              android:paddingBottom="5dip"
+              android:paddingLeft="15dip"
+              android:paddingRight="15dip"
+              android:layout_marginTop="15dip"
+              />
+
+</LinearLayout>
+</LinearLayout>

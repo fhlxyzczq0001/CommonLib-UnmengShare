@@ -1,0 +1,91 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.chenenyu.router'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        //是否是module编译
+        if (!IsBuildMudle.toBoolean()) {//非module编译
+            buildConfigField "boolean", "IsBuildMudle", "false"
+        }else {
+            buildConfigField "boolean", "IsBuildMudle", "true"
+        }
+        //是否请求HttpDns
+        if (!IsHttpDns.toBoolean()) {//不请求HttpDns
+            buildConfigField "boolean", "IsRequestHttpDns", "false"
+        }else {
+            buildConfigField "boolean", "IsRequestHttpDns", "true"
+        }
+        //是否强制开启POST请求
+        if (!IsHttpPost.toBoolean()) {//不强制
+            buildConfigField "boolean", "IsHttpPost", "false"
+        }else {
+            buildConfigField "boolean", "IsHttpPost", "true"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//v7包
+    compile rootProject.ext.dependencies.appcompatV7
+//design包
+    compile rootProject.ext.dependencies.design
+//解决65536
+    compile rootProject.ext.dependencies.multidex
+//butterknife框架
+    compile rootProject.ext.dependencies.butterknife
+//butterknife框架快速注解
+    apt rootProject.ext.dependencies.butterknifeCompiler
+//网络请求框架
+    compile project(rootProject.ext.dependencies.CommonLibraryRxretrofit_Library)
+//Material Design带水波纹的动画效果框架
+    compile rootProject.ext.dependencies.rippleeffect
+//弹出对话框
+    compile project(rootProject.ext.dependencies.CommonLibraryMyDialog)
+//json解析框架
+    compile rootProject.ext.dependencies.fastjson
+//pulltorefresh下拉刷新框架
+    compile project(rootProject.ext.dependencies.CommonLibraryPulltorefresh)
+//加载动画对话框
+    compile project(rootProject.ext.dependencies.CommonLibraryShapeLoading)
+//glide图片库
+    compile project(rootProject.ext.dependencies.CommonLibraryGlideLibrary)
+//eventbus通信框架
+    compile rootProject.ext.dependencies.eventbus
+//通用Adapter
+    compile project(rootProject.ext.dependencies.CommonLibrarySuperadapter)
+//下载动画
+    compile project(rootProject.ext.dependencies.CommonLibraryDownloadAnimLibrary)
+//系统异常显示默认activity
+    compile project(rootProject.ext.dependencies.CommonLibraryCustomActivityOnCarsh)
+//最新揭晓界面倒计时控件
+    compile project(rootProject.ext.dependencies.CommonLibraryCountDownview)
+//materialdesign动画集成
+    compile project(rootProject.ext.dependencies.CommonLibraryMaterialDesign)
+//快速设置界面条目封装框架
+    compile project(rootProject.ext.dependencies.CommonLibraryLsettingviewlibrary)
+}

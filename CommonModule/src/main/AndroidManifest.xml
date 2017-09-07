@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.app.common">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <!--交互webview的Activity-->
+        <activity
+            android:name=".MVP.View.Implement.WebView.Common_InteractionWebView_View_Implement"
+            android:theme="@style/defaultStyle"
+            />
+        <!--网络异常显示的Activity-->
+        <activity
+            android:name=".MVP.View.Implement.NetworkError_View_Implement"
+            android:theme="@style/defaultStyle"
+        />jife
+    </application>
+
+</manifest>

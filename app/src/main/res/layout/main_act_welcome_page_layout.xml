@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--启动页-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/myParent_layout"
+              android:orientation="vertical">
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+            <ImageView
+                android:id="@+id/mydk_lay_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/mydk_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp">
+
+            <com.app.common.CustomView.CircleTextProgressbar
+                android:id="@+id/mydk_lay_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:text="跳过"
+                android:textSize="@dimen/x12"
+                app:in_circle_color="@color/app_color"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

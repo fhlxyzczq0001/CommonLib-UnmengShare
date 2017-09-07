@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--历史开奖item布局-->
+<LinearLayout android:id="@+id/parentLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:padding="10dip"
+              android:orientation="horizontal"
+>
+
+    <!--期数-->
+    <TextView
+        android:id="@+id/textPeriods"
+        android:layout_width="0dip"
+        android:layout_weight="3.5"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x15"
+        android:textColor="@color/account_text_gray"
+        android:gravity="center"
+        android:text="067期"
+        />
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x15"
+        android:textColor="@color/account_text_gray"
+        android:gravity="center"
+        android:text="17:25"
+    />
+
+    <!--开奖结果-->
+    <TextView
+        android:id="@+id/textResults"
+        android:layout_width="0dip"
+        android:layout_weight="3.5"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x15"
+        android:textColor="@color/account_text_gray"
+        android:gravity="center"
+        android:text="0  1  0  5  8"
+    />
+</LinearLayout>

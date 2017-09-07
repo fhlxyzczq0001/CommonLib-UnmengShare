@@ -1,0 +1,15 @@
+include ':app', ':AndroidStudio_CommonLibrary', ':CommonModule', ':UserInfoModule'
+project(':AndroidStudio_CommonLibrary').projectDir = new File('../AndroidStudio_CommonLibrary/')
+include ':AndroidStudio_CommonLibrary:rxretrofitlibrary',
+        ':AndroidStudio_CommonLibrary:myDialog',
+        ':AndroidStudio_CommonLibrary:shapeloading',
+        ':AndroidStudio_CommonLibrary:customActivityOnCarsh',
+        ':AndroidStudio_CommonLibrary:pulltorefresh',
+        ':AndroidStudio_CommonLibrary:countdownview',
+        ':AndroidStudio_CommonLibrary:guide_lib',
+        ':AndroidStudio_CommonLibrary:glide_library',
+        ':AndroidStudio_CommonLibrary:superadapter',
+        ':AndroidStudio_CommonLibrary:download_anim_library',
+        ':AndroidStudio_CommonLibrary:materialdesign',
+        ':AndroidStudio_CommonLibrary:lsettingviewlibrary'
+

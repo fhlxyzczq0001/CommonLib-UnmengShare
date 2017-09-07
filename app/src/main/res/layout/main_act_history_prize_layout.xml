@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--历史开奖布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <include layout="@layout/common_base_custom_actionbar_layout"
+    />
+    <!--开奖时间-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:padding="10dip">
+
+
+        <TextView
+            android:id="@+id/textPrizeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-08-07"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x15"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史开奖"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x15"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dip"
+    >
+
+        <!--期数-->
+        <TextView
+            android:id="@+id/textPeriods"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:text="期数"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+        />
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="时间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+        />
+
+        <!--开奖结果-->
+        <TextView
+            android:id="@+id/textResults"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:text="开奖结果"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"
+        />
+    </LinearLayout>
+    <!--PullToRefreshRecyclerView列表-->
+    <LinearLayout android:id="@+id/category_goods_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

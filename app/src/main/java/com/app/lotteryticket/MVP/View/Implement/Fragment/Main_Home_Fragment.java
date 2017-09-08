@@ -286,7 +286,7 @@ public class Main_Home_Fragment extends Mian_BaseFragment<Main_HomeFragment_Cont
     public void setCountTime(long countTime) {
         countdownViewTime.start(countTime);
         DynamicConfig.Builder dynamicConfigBuilder = new DynamicConfig.Builder();
-        if ((countTime / 60 / 60 / 1000) >=3) {
+        if ((countTime / 60 / 60 / 1000) >=5) {
             dynamicConfigBuilder.setShowDay(false)
                     .setShowHour(true).setShowMinute(true)
                     .setShowSecond(true).setShowMillisecond(false);
